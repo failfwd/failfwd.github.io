@@ -1,13 +1,13 @@
 .jumbotron {
-  border-bottom: 1px solid $grey-color-light;
   height: 100vh;
-  padding: 0px !important;
   background: url('../images/151.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-
   // Positioning context for the mobile navigation icon
   position: relative;
+  // Bootstrap overides
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 .jumbotron .overlay {
