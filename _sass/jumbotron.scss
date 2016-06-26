@@ -11,21 +11,17 @@
 
 .jumbotron .overlay {
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.7);
 }
 
 .jumbotron .page-title {
   position: absolute;
-  background: red;
-  padding: 10px;
-  margin: 0;
-  bottom: 50%;
-  left: 46%;
-  border-radius: 3px 3px 3px 3px;
+  width: 80%;
+  bottom: 40vh;
+  text-align: center
 }
-
-.jumbotron .page-title h1 {
-  font-family: 'Rubik', sans-serif;
-  text-align: center;
-  margin: 0;
+.jumbotron .page-title img {
+  width: 35vh;
+  height: auto;
+  margin: 0 auto;
 }
