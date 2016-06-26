@@ -2,39 +2,40 @@
 layout: landing
 ---
 
-<div class="social">
-  <div class="fb-page"
-    data-href="https://www.facebook.com/flFWD/"
-    data-tabs="timeline"
-    data-width="320"
-    data-height="800"
-    data-small-header="false"
-    data-adapt-container-width="false"
-    data-hide-cover="false"
-    data-show-facepile="true">
-    <blockquote cite="https://www.facebook.com/flFWD/" class="fb-xfbml-parse-ignore">
-      <a href="https://www.facebook.com/flFWD/">Fail FWD</a>
-    </blockquote>
+<div class="row">
+  <div class="fb-page-container col-md-4">
+    <div class="social">
+      <div class="fb-page"
+        data-href="https://www.facebook.com/flFWD/"
+        data-tabs="timeline"
+        data-width="320"
+        data-height="800"
+        data-small-header="false"
+        data-adapt-container-width="false"
+        data-hide-cover="false"
+        data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/flFWD/" class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/flFWD/">Fail FWD</a>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <h1 class="page-heading">Posts</h1>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
   </div>
 </div>
-<div class="home">
-
-  <!--
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {#% for post in site.posts %}
-      <li>
-        <span class="post-meta">{#{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{#{ post.url | prepend: site.baseurl }}">{#{ post.title }}</a>
-        </h2>
-      </li>
-    {#% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{#{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  -->
-
 </div>
